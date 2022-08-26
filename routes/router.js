@@ -7,6 +7,11 @@ const authController = require('../controllers/authController')
 router.get('/', (req, res)=>{
     res.render('index')
 })
+//Cambios OGMD 26/08/2022
+router.get('/socket', (req,res) => {
+    res.render('socket')
+})
+//Termina codigo
 router.get('/login', (req, res)=>{
     res.render('login', {alert:false})
 })
